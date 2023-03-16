@@ -1,2 +1,1 @@
-trojan://729RjPZ9NH@123.jieyusustc.top:37216?type=tcp&security=tls&sni=123.jieyusustc.top&flow=undefined
-trojan://TONU5Wfa1T@6.jieyusustc.top:11627?type=tcp&security=tls&sni=6.jieyusustc.top&flow=undefined#6
+dHJvamFuOi8vNzI5UmpQWjlOSEAxMjMuamlleXVzdXN0Yy50b3A6MzcyMTY/dHlwZT10Y3Amc2VjdXJpdHk9dGxzJnNuaT0xMjMuamlleXVzdXN0Yy50b3AmZmxvdz11bmRlZmluZWQgdHJvamFuOi8vVE9OVTVXZmExVEA2LmppZXl1c3VzdGMudG9wOjExNjI3P3R5cGU9dGNwJnNlY3VyaXR5PXRscyZzbmk9Ni5qaWV5dXN1c3RjLnRvcCZmbG93PXVuZGVmaW5lZCM2
