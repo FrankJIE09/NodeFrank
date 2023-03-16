@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：01-03-2023 11:18:21
+# 创建时间：2023-03-16 13:33:26
 # 使用模版：V2RaySE 默认模版
-# 节点数量：5
+# 节点数量：2
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -22,9 +22,6 @@ dns:
 
 proxies:
   - {"name":"defaultName","type":"trojan","server":"123.jieyusustc.top","port":37216,"udp":true,"password":"729RjPZ9NH","sni":"123.jieyusustc.top","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"_1","type":"ss","server":"123.jieyusustc.top","port":23164,"password":"RG85a3RrTVBHMFVGMENnRUxNdUlsQzBXM0dlTG9tWlBwUVBySnNqcE1rU3V6anBYU25vN2ZuamVMaW51S0d3QQ==","cipher":"aes-256-gcm"}
-  - {"name":"_2","type":"vmess","server":"123.jieyusustc.top","port":19905,"cipher":"auto","uuid":"fe72174e-a323-42a8-8fd1-8840fe1d26fc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"_3","type":"vmess","server":"123.jieyusustc.top","port":19905,"cipher":"auto","uuid":"fe72174e-a323-42a8-8fd1-8840fe1d26fc","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"6","type":"trojan","server":"6.jieyusustc.top","port":11627,"udp":true,"password":"TONU5Wfa1T","sni":"6.jieyusustc.top","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
@@ -33,9 +30,6 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - defaultName
-      - _1
-      - _2
-      - _3
       - '6'
   - name: ♻️ 自动选择
     type: url-test
@@ -44,9 +38,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - defaultName
-      - _1
-      - _2
-      - _3
       - '6'
   - name: 🌍 国外媒体
     type: select
@@ -55,9 +46,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - defaultName
-      - _1
-      - _2
-      - _3
       - '6'
   - name: 📲 电报信息
     type: select
@@ -65,9 +53,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - defaultName
-      - _1
-      - _2
-      - _3
       - '6'
   - name: Ⓜ️ 微软服务
     type: select
@@ -75,9 +60,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🚀 节点选择
       - defaultName
-      - _1
-      - _2
-      - _3
       - '6'
   - name: 🍎 苹果服务
     type: select
@@ -85,9 +67,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - defaultName
-      - _1
-      - _2
-      - _3
       - '6'
   - name: 🎯 全球直连
     type: select
@@ -112,9 +91,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - defaultName
-      - _1
-      - _2
-      - _3
       - '6'
 
 rules:
