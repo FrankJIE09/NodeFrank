@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-03-16 13:33:26
+# 创建时间：2023-03-22 16:09:52
 # 使用模版：V2RaySE 默认模版
-# 节点数量：2
+# 节点数量：1
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,8 +21,7 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"defaultName","type":"trojan","server":"123.jieyusustc.top","port":37216,"udp":true,"password":"729RjPZ9NH","sni":"123.jieyusustc.top","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"6","type":"trojan","server":"6.jieyusustc.top","port":11627,"udp":true,"password":"TONU5Wfa1T","sni":"6.jieyusustc.top","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"defaultName","type":"trojan","server":"123.jieyusustc.top","port":19647,"udp":true,"password":"EAuXDMn43W","sni":"123.jieyusustc.top","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -30,7 +29,6 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - defaultName
-      - '6'
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -38,7 +36,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - defaultName
-      - '6'
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -46,28 +43,24 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - defaultName
-      - '6'
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - defaultName
-      - '6'
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - defaultName
-      - '6'
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - defaultName
-      - '6'
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -91,7 +84,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - defaultName
-      - '6'
 
 rules:
 # 本地/局域网地址
