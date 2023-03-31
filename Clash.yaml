@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-03-27 18:05:15
+# 创建时间：2023-03-31 14:58:42
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：2
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,9 +21,8 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"defaultName","type":"trojan","server":"123.jieyusustc.top","port":32001,"udp":true,"password":"729RjPZ9NH","sni":"123.jieyusustc.top","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"defaultName","type":"trojan","server":"123.jieyusustc.top","port":443,"udp":true,"password":"729RjPZ9NH","sni":"123.jieyusustc.top","skip-cert-verify":true,"network":"tcp"}
   - {"name":"6","type":"trojan","server":"6.jieyusustc.top","port":32002,"udp":true,"password":"TONU5Wfa1T","sni":"6.jieyusustc.top","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"","type":"vmess","server":"123.jieyusustc.top","port":32003,"cipher":"auto","uuid":"670f0075-becc-47ab-c860-a00c6c687be1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -32,7 +31,6 @@ proxy-groups:
       - DIRECT
       - defaultName
       - '6'
-      - ''
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -41,7 +39,6 @@ proxy-groups:
     proxies:
       - defaultName
       - '6'
-      - ''
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -50,7 +47,6 @@ proxy-groups:
       - 🎯 全球直连
       - defaultName
       - '6'
-      - ''
   - name: 📲 电报信息
     type: select
     proxies:
@@ -58,7 +54,6 @@ proxy-groups:
       - 🎯 全球直连
       - defaultName
       - '6'
-      - ''
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -66,7 +61,6 @@ proxy-groups:
       - 🚀 节点选择
       - defaultName
       - '6'
-      - ''
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -74,7 +68,6 @@ proxy-groups:
       - 🎯 全球直连
       - defaultName
       - '6'
-      - ''
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -99,7 +92,6 @@ proxy-groups:
       - ♻️ 自动选择
       - defaultName
       - '6'
-      - ''
 
 rules:
 # 本地/局域网地址
