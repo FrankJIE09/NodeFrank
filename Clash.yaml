@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2023-05-01 18:19:19
+# 客户端：Clash.Meta
+# 创建时间：2023-05-17 15:21:14
 # 使用模版：V2RaySE 默认模版
 # 节点数量：2
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -21,53 +22,53 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"","type":"vmess","server":"123.jieyusustc.top","port":32003,"cipher":"auto","uuid":"670f0075-becc-47ab-c860-a00c6c687be1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"6","type":"trojan","server":"6.jieyusustc.top","port":32002,"udp":true,"password":"TONU5Wfa1T","sni":"6.jieyusustc.top","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"6","type":"vless","server":"6.jieyusustc.top","port":32006,"uuid":"8fcc2c58-999f-4a35-decd-e71d7ddef59b","tls":true,"network":"tcp"}
+  - {"name":"vmess","type":"vmess","server":"123.jieyusustc.top","port":32001,"cipher":"auto","uuid":"9c5ee05d-273f-4855-a581-986346f65cc1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ''
       - '6'
+      - vmess
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ''
       - '6'
+      - vmess
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ''
       - '6'
+      - vmess
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ''
       - '6'
+      - vmess
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ''
       - '6'
+      - vmess
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ''
       - '6'
+      - vmess
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -90,8 +91,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ''
       - '6'
+      - vmess
 
 rules:
 # 本地/局域网地址
