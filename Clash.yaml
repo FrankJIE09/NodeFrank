@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-28 14:29:41
+# 创建时间：2023-06-14 19:33:37
 # 使用模版：V2RaySE 默认模版
-# 节点数量：4
+# 节点数量：3
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,10 +21,9 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"6","type":"trojan","server":"6.jieyusustc.top","port":32006,"udp":true,"password":"mGWKXQqXAX","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"vmess","type":"trojan","server":"123.jieyusustc.top","port":32001,"udp":true,"password":"6msOO8eIdV","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"443","type":"ss","server":"123.jieyusustc.too","port":443,"password":"eXhSSTBLSHdtOEtJZ0VPcXdoR2dOeWs4ekZUcGgzYXlabzNabHpSZTkycHlOWFJ2djJGQ25GYWtBVUhFb1EzOA==","cipher":"aes-256-gcm"}
-  - {"name":"defaultName","type":"ss","server":"[2001","port":1,"password":"545545","cipher":"aes-128-gcm"}
+  - {"name":"6","type":"trojan","server":"6.jieyucv.top","port":51939,"udp":true,"password":"b2u7oGbk3M","skip-cert-verify":true,"network":"tcp","alpn":["http/1.1","h2"]}
+  - {"name":"123","type":"ss","server":"jieyucv.top","port":59143,"password":"eGdOWEZEUVl3OHJSOXExaVVpWDVZYlJNYTBHZ0hhQTluZFdid0NQbHd1RnZhUm4zdExjQnlNRWdidjFCWnBHNg==","cipher":"aes-256-gcm"}
+  - {"name":"","type":"vmess","server":"jieyucv.top","port":22727,"cipher":"auto","uuid":"675e1432-6a1e-45b7-a591-2f06cc265b1a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -32,9 +31,8 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - '6'
-      - vmess
-      - '443'
-      - defaultName
+      - '123'
+      - ''
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -42,9 +40,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '6'
-      - vmess
-      - '443'
-      - defaultName
+      - '123'
+      - ''
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -52,36 +49,32 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - '6'
-      - vmess
-      - '443'
-      - defaultName
+      - '123'
+      - ''
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - '6'
-      - vmess
-      - '443'
-      - defaultName
+      - '123'
+      - ''
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - '6'
-      - vmess
-      - '443'
-      - defaultName
+      - '123'
+      - ''
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - '6'
-      - vmess
-      - '443'
-      - defaultName
+      - '123'
+      - ''
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -105,9 +98,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - '6'
-      - vmess
-      - '443'
-      - defaultName
+      - '123'
+      - ''
 
 rules:
 # 本地/局域网地址
